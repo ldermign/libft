@@ -3,55 +3,83 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ldermign <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/12 19:45:34 by ldermign          #+#    #+#              #
-#    Updated: 2021/01/12 08:40:40 by ldermign         ###   ########.fr        #
+#    Updated: 2021/05/31 14:09:03 by ldermign         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libft.a
 
-SRCS	=	ft_strrchr.c \
-		   	ft_isalnum.c \
-			ft_memchr.c \
-			ft_strlcat.c \
-			ft_tolower.c \
-			ft_isalpha.c \
-			ft_isdigit.c \
-			ft_memmove.c \
-			ft_memccpy.c \
-			ft_strchr.c \
-			ft_strlcpy.c \
-			ft_memcmp.c \
-			ft_toupper.c \
-			ft_memcpy.c \
-			ft_isascii.c \
-			ft_strlen.c \
-			ft_isprint.c \
-			ft_memset.c \
-			ft_strnstr.c \
-			ft_bzero.c \
-			ft_strncmp.c \
-			ft_atoi.c \
-			ft_calloc.c \
-			ft_itoa.c \
-			ft_putchar_fd.c \
-			ft_putendl_fd.c \
-			ft_putnbr_fd.c \
-			ft_putstr_fd.c \
-			ft_split.c \
-			ft_strdup.c \
-			ft_strjoin.c \
-			ft_strmapi.c \
-			ft_strtrim.c \
-			ft_substr.c 
+SRCS	=	./srcs/libft/ft_strrchr.c \
+			./srcs/libft/ft_isalnum.c \
+			./srcs/libft/ft_memchr.c \
+			./srcs/libft/ft_strlcat.c \
+			./srcs/libft/ft_tolower.c \
+			./srcs/libft/ft_isalpha.c \
+			./srcs/libft/ft_isdigit.c \
+			./srcs/libft/ft_memmove.c \
+			./srcs/libft/ft_memccpy.c \
+			./srcs/libft/ft_strchr.c \
+			./srcs/libft/ft_strlcpy.c \
+			./srcs/libft/ft_memcmp.c \
+			./srcs/libft/ft_toupper.c \
+			./srcs/libft/ft_memcpy.c \
+			./srcs/libft/ft_isascii.c \
+			./srcs/libft/ft_strlen.c \
+			./srcs/libft/ft_isprint.c \
+			./srcs/libft/ft_memset.c \
+			./srcs/libft/ft_strnstr.c \
+			./srcs/libft/ft_bzero.c \
+			./srcs/libft/ft_strncmp.c \
+			./srcs/libft/ft_atoi.c \
+			./srcs/libft/ft_calloc.c \
+			./srcs/libft/ft_itoa.c \
+			./srcs/libft/ft_putchar_fd.c \
+			./srcs/libft/ft_putendl_fd.c \
+			./srcs/libft/ft_putnbr_fd.c \
+			./srcs/libft/ft_putstr_fd.c \
+			./srcs/libft/ft_split.c \
+			./srcs/libft/ft_strdup.c \
+			./srcs/libft/ft_strjoin.c \
+			./srcs/libft/ft_strmapi.c \
+			./srcs/libft/ft_strtrim.c \
+			./srcs/libft/ft_substr.c \
+			./srcs/libft/ft_strcmp.c \
+			./srcs/libft/ft_putchar.c \
+			./srcs/libft/ft_strncpy.c \
+			./srcs/libft/ft_swap.c \
+			./srcs/libft/ft_putstr.c \
+			./srcs/libft/ft_strcpy.c \
+			./srcs/libft/ft_strcat.c \
+			./srcs/libft/ft_strncat.c \
+			./srcs/get_next_line/get_next_line_utils.c \
+			./srcs/get_next_line/get_next_line.c
+
+# Printf srcs
+SRCS	+=	./srcs/ft_printf/ptf_alloc_right_size.c \
+            ./srcs/ft_printf/ptf_check.c \
+            ./srcs/ft_printf/ptf_conversion_p_d_i_u_x.c \
+            ./srcs/ft_printf/ptf_conversion_s_c_per.c \
+            ./srcs/ft_printf/ft_printf.c \
+            ./srcs/ft_printf/ptf_fusion_strflag_conv_cps.c \
+            ./srcs/ft_printf/ptf_fusion_strflag_conv_dius.c \
+            ./srcs/ft_printf/ptf_fusion_strflag_conv_s_utils.c \
+            ./srcs/ft_printf/ptf_init_flags.c \
+            ./srcs/ft_printf/ptf_join_width_preci.c \
+            ./srcs/ft_printf/ptf_start_fusion.c \
+            ./srcs/ft_printf/ptf_utils.c \
+            ./srcs/ft_printf/ptf_utils_itoa.c \
+            ./srcs/ft_printf/ptf_utils_size.c
+
+IDIR	=	./includes/
 
 OBJS	=	${SRCS:.c=.o}
 
 CC		=	clang
 
-CFLAGS	=	-Wall -Wextra -Werror
+CFLAGS	=	-Wall -Wextra -Werror -I ${IDIR}
 
 LIBC	=	ar rc
 
@@ -59,14 +87,14 @@ LIBR	=	ranlib
 
 RM		=	rm -f
 
-.c.o:
-			${CC} ${CFLAGS} -c $< -o ${<:.c=.o} -I ${INCS}
+all:		${NAME}
 
-$(NAME):	${OBJS} ./libft.h
+${NAME}:	${OBJS} ${IDIR}
 			${LIBC} ${NAME} ${OBJS}
 			${LIBR}	${NAME}
 
-all:		${NAME}
+.c.o:
+			${CC} ${CFLAGS} -c $< -o $@
 
 clean:
 			${RM} ${OBJS}
