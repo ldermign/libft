@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/12 19:44:50 by ldermign          #+#    #+#             */
-/*   Updated: 2021/05/31 13:54:04 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/06/06 16:27:08 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@
 # include <string.h>
 # include "ft_printf.h"
 # include "get_next_line.h"
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 int					ft_atoi(const char *str);
 void				ft_bzero(void *str, size_t n);
@@ -54,5 +60,9 @@ char				*ft_substr(char const *s, unsigned int start, size_t len);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 int					ft_strcmp(char *s1, char *s2);
+void				ft_lstadd_front(t_list **alst, t_list *new);
+void				ft_lstdelone(t_list *lst, void (*del)(void *));
+t_list				*ft_lstnew(void *content);
+int					ft_lstsize(t_list *lst);
 
 #endif
