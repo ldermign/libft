@@ -6,67 +6,69 @@
 #    By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/12 19:45:34 by ldermign          #+#    #+#              #
-#    Updated: 2021/06/06 16:26:29 by ldermign         ###   ########.fr        #
+#    Updated: 2021/06/15 08:57:06 by ldermign         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libft.a
 
-SRCS	=	./srcs/libft/ft_strrchr.c \
-			./srcs/libft/ft_isalnum.c \
-			./srcs/libft/ft_memchr.c \
-			./srcs/libft/ft_strlcat.c \
-			./srcs/libft/ft_tolower.c \
-			./srcs/libft/ft_isalpha.c \
-			./srcs/libft/ft_isdigit.c \
-			./srcs/libft/ft_memmove.c \
-			./srcs/libft/ft_memccpy.c \
-			./srcs/libft/ft_strchr.c \
-			./srcs/libft/ft_strlcpy.c \
-			./srcs/libft/ft_memcmp.c \
-			./srcs/libft/ft_toupper.c \
-			./srcs/libft/ft_memcpy.c \
-			./srcs/libft/ft_isascii.c \
-			./srcs/libft/ft_strlen.c \
-			./srcs/libft/ft_isprint.c \
-			./srcs/libft/ft_memset.c \
-			./srcs/libft/ft_strnstr.c \
+SRCS	=	./srcs/libft/ft_atoi.c \
 			./srcs/libft/ft_bzero.c \
-			./srcs/libft/ft_strncmp.c \
-			./srcs/libft/ft_atoi.c \
 			./srcs/libft/ft_calloc.c \
+			./srcs/libft/ft_isalnum.c \
+			./srcs/libft/ft_isalpha.c \
+			./srcs/libft/ft_isascii.c \
+			./srcs/libft/ft_isdigit.c \
+			./srcs/libft/ft_isprint.c \
 			./srcs/libft/ft_itoa.c \
-			./srcs/libft/ft_putchar_fd.c \
-			./srcs/libft/ft_putendl_fd.c \
-			./srcs/libft/ft_putnbr_fd.c \
-			./srcs/libft/ft_putstr_fd.c \
-			./srcs/libft/ft_split.c \
-			./srcs/libft/ft_strdup.c \
-			./srcs/libft/ft_strjoin.c \
-			./srcs/libft/ft_strmapi.c \
-			./srcs/libft/ft_strtrim.c \
-			./srcs/libft/ft_substr.c \
-			./srcs/libft/ft_strcmp.c \
-			./srcs/libft/ft_putchar.c \
-			./srcs/libft/ft_strncpy.c \
-			./srcs/libft/ft_swap.c \
-			./srcs/libft/ft_putstr.c \
-			./srcs/libft/ft_strcpy.c \
-			./srcs/libft/ft_strcat.c \
-			./srcs/libft/ft_strncat.c \
 			./srcs/libft/ft_lstadd_front.c \
 			./srcs/libft/ft_lstdelone.c \
 			./srcs/libft/ft_lstnew.c \
 			./srcs/libft/ft_lstsize.c \
-			./srcs/get_next_line/get_next_line_utils.c \
-			./srcs/get_next_line/get_next_line.c
+			./srcs/libft/ft_memccpy.c \
+			./srcs/libft/ft_memchr.c \
+			./srcs/libft/ft_memcmp.c \
+			./srcs/libft/ft_memcpy.c \
+			./srcs/libft/ft_memmove.c \
+			./srcs/libft/ft_memset.c \
+			./srcs/libft/ft_putchar.c \
+			./srcs/libft/ft_putchar_fd.c \
+			./srcs/libft/ft_putendl_fd.c \
+			./srcs/libft/ft_putnbr_fd.c \
+			./srcs/libft/ft_putstr.c \
+			./srcs/libft/ft_putstr_fd.c \
+			./srcs/libft/ft_split.c \
+			./srcs/libft/ft_strcat.c \
+			./srcs/libft/ft_strchr.c \
+			./srcs/libft/ft_strcmp.c \
+			./srcs/libft/ft_strcpy.c \
+			./srcs/libft/ft_strdup.c \
+			./srcs/libft/ft_strjoin.c \
+			./srcs/libft/ft_strlcat.c \
+			./srcs/libft/ft_strlcpy.c \
+			./srcs/libft/ft_strlen.c \
+			./srcs/libft/ft_strmapi.c \
+			./srcs/libft/ft_strncat.c \
+			./srcs/libft/ft_strncmp.c \
+			./srcs/libft/ft_strncpy.c \
+			./srcs/libft/ft_strnstr.c \
+			./srcs/libft/ft_strrchr.c \
+			./srcs/libft/ft_strtrim.c \
+			./srcs/libft/ft_substr.c \
+			./srcs/libft/ft_swap.c \
+			./srcs/libft/ft_tolower.c \
+			./srcs/libft/ft_toupper.c
+
+# Gnl srcs
+SRCS	+=	./srcs/get_next_line/get_next_line.c \
+			./srcs/get_next_line/get_next_line_utils.c
 
 # Printf srcs
-SRCS	+=	./srcs/ft_printf/ptf_alloc_right_size.c \
+SRCS	+=	./srcs/ft_printf/ft_printf.c \
+			./srcs/ft_printf/ptf_alloc_right_size.c \
             ./srcs/ft_printf/ptf_check.c \
             ./srcs/ft_printf/ptf_conversion_p_d_i_u_x.c \
             ./srcs/ft_printf/ptf_conversion_s_c_per.c \
-            ./srcs/ft_printf/ft_printf.c \
             ./srcs/ft_printf/ptf_fusion_strflag_conv_cps.c \
             ./srcs/ft_printf/ptf_fusion_strflag_conv_dius.c \
             ./srcs/ft_printf/ptf_fusion_strflag_conv_s_utils.c \
