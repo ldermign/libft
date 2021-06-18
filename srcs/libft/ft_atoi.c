@@ -6,17 +6,17 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 23:04:52 by ldermign          #+#    #+#             */
-/*   Updated: 2021/04/27 13:42:04 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/06/18 11:22:45 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+long long int	ft_atoi(const char *str)
 {
-	int			i;
-	int			neg;
-	long int	nbr;
+	int				i;
+	int				neg;
+	long long int	nbr;
 
 	i = 0;
 	neg = 1;
