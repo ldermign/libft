@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 23:08:39 by ldermign          #+#    #+#             */
-/*   Updated: 2021/04/25 13:48:47 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/06/23 20:08:53 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,15 @@ char	*ft_itoa(int n)
 	int		len;
 
 	nb = n;
-	len = ft_len_int(nb) + (nb < 0);
+	len = ft_len_int(nb);
 	dst = (char *) malloc(sizeof(char) * len + 1 + (n < 0));
 	if (dst == NULL)
 		return (NULL);
 	if (nb < 0)
 	{
-		*dst = '-';
-		n = -nb;
+		dst[0] = '-';
+		len += 1;
+		nb = -nb;
 	}
 	dst[len--] = '\0';
 	while (len >= (n < 0))

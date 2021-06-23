@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/06 16:23:11 by ldermign          #+#    #+#             */
-/*   Updated: 2021/06/06 16:28:10 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/06/23 20:25:25 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ t_list	*ft_lstnew(void *content)
 		return (NULL);
 	new->content = content;
 	new->next = NULL;
-	return (content);
+	return (new);
 }

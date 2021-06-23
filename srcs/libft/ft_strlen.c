@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 23:13:43 by ldermign          #+#    #+#             */
-/*   Updated: 2021/04/25 13:56:34 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/06/23 19:42:39 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_strlen(const char *str)
 {
 	int	i;
 
-	if (!str)
+	if (str == NULL)
 		return (0);
 	i = 0;
 	while (str[i])
