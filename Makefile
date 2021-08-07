@@ -6,13 +6,14 @@
 #    By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/12 19:45:34 by ldermign          #+#    #+#              #
-#    Updated: 2021/06/15 08:57:06 by ldermign         ###   ########.fr        #
+#    Updated: 2021/08/07 16:37:20 by ldermign         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libft.a
 
 SRCS	=	./srcs/libft/ft_atoi.c \
+			./srcs/libft/ft_binary.c \
 			./srcs/libft/ft_bzero.c \
 			./srcs/libft/ft_calloc.c \
 			./srcs/libft/ft_isalnum.c \
@@ -21,6 +22,7 @@ SRCS	=	./srcs/libft/ft_atoi.c \
 			./srcs/libft/ft_isdigit.c \
 			./srcs/libft/ft_isprint.c \
 			./srcs/libft/ft_itoa.c \
+			./srcs/libft/ft_len_int.c \
 			./srcs/libft/ft_lstadd_front.c \
 			./srcs/libft/ft_lstdelone.c \
 			./srcs/libft/ft_lstnew.c \
