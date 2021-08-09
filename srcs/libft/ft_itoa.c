@@ -6,13 +6,13 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 23:08:39 by ldermign          #+#    #+#             */
-/*   Updated: 2021/06/23 20:08:53 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/08/08 15:26:26 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_len_int(long n)
+int	ft_len(long n)
 {
 	int	len_int;
 
@@ -34,7 +34,7 @@ char	*ft_itoa(int n)
 	int		len;
 
 	nb = n;
-	len = ft_len_int(nb);
+	len = ft_len(nb);
 	dst = (char *) malloc(sizeof(char) * len + 1 + (n < 0));
 	if (dst == NULL)
 		return (NULL);

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils_itoa.c                                       :+:      :+:    :+:   */
+/*   ptf_utils_itoa.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/24 15:57:56 by ldermign          #+#    #+#             */
-/*   Updated: 2021/04/25 14:46:34 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/08/08 15:27:06 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ char	*ft_itoa_base(size_t nbr, char *base)
 	return (dst);
 }
 
-static int	ft_len_int(long n)
+static int	ft_len(long n)
 {
 	int	len_int;
 
@@ -82,7 +82,7 @@ char	*ft_itoa_unsd(unsigned int n)
 	unsigned int	nb;
 
 	nb = n;
-	len = ft_len_int(nb) + (nb < 0);
+	len = ft_len(nb) + (nb < 0);
 	dst = (char *)malloc(sizeof(char) * len + 1 + (n < 0));
 	if (dst == NULL)
 		return (NULL);
