@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/12 19:44:50 by ldermign          #+#    #+#             */
-/*   Updated: 2021/08/07 16:36:58 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/08/11 17:48:15 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
-long long int		ft_atoi(const char *str);
+int					ft_atoi(const char *str);
+long long int		ft_atol(const char *str);
 int					ft_binary(int nbr_to_convert);
 void				ft_bzero(void *str, size_t n);
 void				*ft_calloc(size_t nmemb, size_t size);

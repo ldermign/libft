@@ -6,13 +6,14 @@
 #    By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/12 19:45:34 by ldermign          #+#    #+#              #
-#    Updated: 2021/08/07 16:37:20 by ldermign         ###   ########.fr        #
+#    Updated: 2021/08/11 17:47:59 by ldermign         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libft.a
 
 SRCS	=	./srcs/libft/ft_atoi.c \
+			./srcs/libft/ft_atol.c \
 			./srcs/libft/ft_binary.c \
 			./srcs/libft/ft_bzero.c \
 			./srcs/libft/ft_calloc.c \
