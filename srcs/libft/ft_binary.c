@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/07 15:37:19 by ldermign          #+#    #+#             */
-/*   Updated: 2021/08/14 18:29:33 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/08/14 18:35:06 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,3 @@ int	ft_binary(int nbr_to_convert)
 	nbr = ft_atoi(char_nbr);
 	return (nbr);
 }
-
