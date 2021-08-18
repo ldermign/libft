@@ -6,7 +6,7 @@
 #    By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/12 19:45:34 by ldermign          #+#    #+#              #
-#    Updated: 2021/08/11 17:47:59 by ldermign         ###   ########.fr        #
+#    Updated: 2021/08/18 15:25:38 by ldermign         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,9 @@ SRCS	=	./srcs/libft/ft_atoi.c \
 			./srcs/libft/ft_binary.c \
 			./srcs/libft/ft_bzero.c \
 			./srcs/libft/ft_calloc.c \
+			./srcs/libft/ft_free_tab.c \
+			./srcs/libft/ft_int_strstr.c \
+			./srcs/libft/ft_int_strchr.c \
 			./srcs/libft/ft_isalnum.c \
 			./srcs/libft/ft_isalpha.c \
 			./srcs/libft/ft_isascii.c \

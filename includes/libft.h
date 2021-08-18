@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/12 19:44:50 by ldermign          #+#    #+#             */
-/*   Updated: 2021/08/11 17:48:15 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/08/18 15:25:57 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,9 @@ long long int		ft_atol(const char *str);
 int					ft_binary(int nbr_to_convert);
 void				ft_bzero(void *str, size_t n);
 void				*ft_calloc(size_t nmemb, size_t size);
+void				ft_free_tab(char **tab);
+int					ft_int_strchr(const char *str, int c);
+int					ft_int_strstr(char *str, char *needle);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
