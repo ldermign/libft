@@ -6,11 +6,24 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/07 15:37:19 by ldermign          #+#    #+#             */
-/*   Updated: 2021/08/14 18:35:06 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/08/18 19:04:44 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	len(int nbr)
+{
+	int	size;
+
+	size = 1;
+	while (nbr > 0)
+	{
+		nbr /= 2;
+		size++;
+	}
+	return (size);
+}
 
 int	ft_binary(int nbr_to_convert)
 {
@@ -18,7 +31,7 @@ int	ft_binary(int nbr_to_convert)
 	int		nbr;
 	char	*char_nbr;
 
-	i = ft_len_int(nbr_to_convert) - 1;
+	i = len(nbr_to_convert) - 1;
 	char_nbr = malloc(sizeof(char) * (ft_len_int(nbr_to_convert) + 1));
 	if (char_nbr == NULL)
 		return (0);
