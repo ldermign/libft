@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 17:38:39 by ldermign          #+#    #+#             */
-/*   Updated: 2021/08/11 17:47:44 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/08/19 12:20:56 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,6 @@ long long int	ft_atol(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (((nbr * 10) + (str[i] - '0') < nbr) && (neg == 1))
-			return (-1);
-		else if (((nbr * 10) + (str[i] - '0') < nbr) && (neg == -1))
-			return (0);
 		nbr = (nbr * 10) + (str[i] - '0');
 		i++;
 	}

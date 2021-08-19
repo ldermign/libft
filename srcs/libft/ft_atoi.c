@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 23:04:52 by ldermign          #+#    #+#             */
-/*   Updated: 2021/08/11 17:48:42 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/08/19 12:21:01 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,6 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (((nbr * 10) + (str[i] - '0') < nbr) && (neg == 1))
-			return (-1);
-		else if (((nbr * 10) + (str[i] - '0') < nbr) && (neg == -1))
-			return (0);
 		nbr = (nbr * 10) + (str[i] - '0');
 		i++;
 	}
