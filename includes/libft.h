@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/12 19:44:50 by ldermign          #+#    #+#             */
-/*   Updated: 2021/08/29 19:27:20 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/09/13 14:46:43 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+# include <fcntl.h>
 # include "ft_printf.h"
 # include "get_next_line.h"
 
@@ -57,6 +58,7 @@ void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char *str);
 void				ft_putstr_fd(char *s, int fd);
+long				ft_random(int max);
 char				**ft_split(char const *str, char c);
 char				*ft_strcat(char *dst, char *src);
 char				*ft_strchr(const char *str, int c);
