@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 14:23:45 by ldermign          #+#    #+#             */
-/*   Updated: 2021/09/13 15:10:36 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/09/14 09:21:21 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,10 @@ long	ft_random(int max)
 			i++;
 		}
 	}
+	close(fd_rand);
 	if (random < 0)
 		random *= -1;
-	while (random >= max)
+	while (random > max)
 		random /= 10;
 	return (random);
 }
