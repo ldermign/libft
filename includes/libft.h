@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/12 19:44:50 by ldermign          #+#    #+#             */
-/*   Updated: 2021/09/13 14:46:43 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/09/15 16:01:15 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
 char				*ft_itoa(int n);
-int					ft_len_int(int	nbr);
+int					ft_len_int(int nbr);
 void				ft_lstadd_front(t_list **alst, t_list *new);
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
 t_list				*ft_lstnew(void *content);
