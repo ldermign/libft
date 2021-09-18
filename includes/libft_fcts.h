@@ -6,14 +6,12 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 16:26:06 by ldermign          #+#    #+#             */
-/*   Updated: 2021/09/18 16:27:51 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/09/18 16:43:31 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_FCTS_H
 # define LIBFT_FCTS_H
-
-# include "libft.h"
 
 typedef struct s_list
 {

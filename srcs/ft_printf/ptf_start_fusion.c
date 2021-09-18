@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   start_fusion.c                                     :+:      :+:    :+:   */
+/*   ptf_start_fusion.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/27 16:00:02 by ldermign          #+#    #+#             */
-/*   Updated: 2021/04/25 14:11:20 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/09/18 16:40:19 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 void	fusion_conv_strflag(char *str, int nbr, t_flag_len *flag)
 {

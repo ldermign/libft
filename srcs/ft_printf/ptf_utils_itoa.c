@@ -6,11 +6,11 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/24 15:57:56 by ldermign          #+#    #+#             */
-/*   Updated: 2021/08/08 15:27:06 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/09/18 16:40:19 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 size_t	ft_len_nbr(size_t nbr, size_t size_base)
 {

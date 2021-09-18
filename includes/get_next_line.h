@@ -6,14 +6,13 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 15:24:48 by ldermign          #+#    #+#             */
-/*   Updated: 2021/05/31 13:54:49 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/09/18 16:42:02 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# include "libft.h"
 # define BUFFER_SIZE 42
 
 int		get_next_line(int fd, char **line);

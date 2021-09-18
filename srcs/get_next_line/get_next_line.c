@@ -6,11 +6,11 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 12:23:12 by ldermign          #+#    #+#             */
-/*   Updated: 2021/04/26 09:30:08 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/09/18 16:39:53 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "libft.h"
 
 int	ft_return_in_str(char *str)
 {

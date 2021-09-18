@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fusion_strflag_conv_dius.c                         :+:      :+:    :+:   */
+/*   ptf_fusion_strflag_conv_dius.c                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/25 09:53:45 by ldermign          #+#    #+#             */
-/*   Updated: 2021/04/25 14:20:35 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/09/18 16:40:19 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 int	ft_nbr_inf_zero(int space, int zero, int size, t_flag_len *flag)
 {

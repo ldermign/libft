@@ -5,18 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/12 09:05:57 by ldermign          #+#    #+#             */
-/*   Updated: 2021/05/31 13:55:27 by ldermign         ###   ########.fr       */
+/*   Created: 2021/09/18 16:41:19 by ldermign          #+#    #+#             */
+/*   Updated: 2021/09/18 16:43:16 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-
-# include <stdlib.h>
-# include <unistd.h>
-# include <stdarg.h>
-# include "libft.h"
 
 /*
 **	Structures cspdiuxX%

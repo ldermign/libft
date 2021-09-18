@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fusion_strflag_conv_s_utils.c                      :+:      :+:    :+:   */
+/*   ptf_fusion_strflag_conv_s_utils.c                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/24 15:00:28 by ldermign          #+#    #+#             */
-/*   Updated: 2021/04/25 14:24:16 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/09/18 16:40:19 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 void	ft_final_size(int width, int prec, int len_str, t_flag_len *flag)
 {
