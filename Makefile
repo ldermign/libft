@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+         #
+#    By: user42 <user42@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/12 19:45:34 by ldermign          #+#    #+#              #
-#    Updated: 2021/09/13 14:47:12 by ldermign         ###   ########.fr        #
+#    Updated: 2021/10/04 15:09:22 by user42           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,9 @@ SRCS	=	./srcs/libft/ft_atoi.c \
 			./srcs/libft/ft_isprint.c \
 			./srcs/libft/ft_itoa.c \
 			./srcs/libft/ft_len_int.c \
+			./srcs/libft/ft_lstadd_back.c \
 			./srcs/libft/ft_lstadd_front.c \
+			./srcs/libft/ft_lstdel_all.c \
 			./srcs/libft/ft_lstdelone.c \
 			./srcs/libft/ft_lstnew.c \
 			./srcs/libft/ft_lstsize.c \
