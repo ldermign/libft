@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_random.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 14:23:45 by ldermign          #+#    #+#             */
-/*   Updated: 2021/09/15 13:42:49 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/10/05 15:53:02 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ long	ft_random(int max)
 
 	i = 0;
 	random = 1;
-	fd_rand = open("/dev/random", O_RDONLY);
+	fd_rand = open("/dev/urandom", O_RDONLY);
 	if (fd_rand == -1)
 		return (-1);
 	if (read(fd_rand, str, 4) > 0)
