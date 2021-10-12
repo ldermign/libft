@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: user42 <user42@student.42.fr>              +#+  +:+       +#+         #
+#    By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/12 19:45:34 by ldermign          #+#    #+#              #
-#    Updated: 2021/10/04 15:09:22 by user42           ###   ########.fr        #
+#    Updated: 2021/10/12 14:08:08 by ldermign         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -103,20 +103,25 @@ LIBR	=	ranlib
 
 RM		=	rm -f
 
-all:		${NAME}
+all:		
+			@echo "Starting libft build."
+			@ make ${NAME}
 
 ${NAME}:	${OBJS} ${IDIR}
-			${LIBC} ${NAME} ${OBJS}
-			${LIBR}	${NAME}
+			@${LIBC} ${NAME} ${OBJS}
+			@${LIBR} ${NAME}
+			@echo "Libft is ready to be used !"
 
 .c.o:
-			${CC} ${CFLAGS} -c $< -o $@
+			@${CC} ${CFLAGS} -c $< -o $@
 
 clean:
-			${RM} ${OBJS}
+			@${RM} ${OBJS}
+			@echo "Rule clean done."
 
 fclean:		clean
-			${RM} ${NAME}
+			@${RM} ${NAME}
+			@echo "Rule fclean done."
 
 re:			fclean all
 
