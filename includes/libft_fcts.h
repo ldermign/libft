@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_fcts.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 16:26:06 by ldermign          #+#    #+#             */
-/*   Updated: 2021/10/04 15:14:59 by user42           ###   ########.fr       */
+/*   Updated: 2021/10/19 11:18:45 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ int					ft_pos_strchr(const char *str, int c);
 void				ft_putchar(char c);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putendl_fd(char *s, int fd);
+void				ft_putnbr(int nb);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char *str);
 void				ft_putstr_fd(char *s, int fd);

@@ -6,7 +6,7 @@
 #    By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/12 19:45:34 by ldermign          #+#    #+#              #
-#    Updated: 2021/10/12 14:08:08 by ldermign         ###   ########.fr        #
+#    Updated: 2021/10/19 11:19:11 by ldermign         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,7 @@ SRCS	=	./srcs/libft/ft_atoi.c \
 			./srcs/libft/ft_putchar.c \
 			./srcs/libft/ft_putchar_fd.c \
 			./srcs/libft/ft_putendl_fd.c \
+			./srcs/libft/ft_putnbr.c \
 			./srcs/libft/ft_putnbr_fd.c \
 			./srcs/libft/ft_putstr.c \
 			./srcs/libft/ft_putstr_fd.c \
