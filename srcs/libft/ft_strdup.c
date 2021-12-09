@@ -6,7 +6,7 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 21:00:58 by ldermign          #+#    #+#             */
-/*   Updated: 2021/06/15 08:42:32 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/12/09 10:49:46 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ char	*ft_strdup(char *str)
 		dst[i] = str[i];
 		i++;
 	}
-	dst[i] = (char) NULL;
+	dst[i] = '\0';
 	return (dst);
 }
