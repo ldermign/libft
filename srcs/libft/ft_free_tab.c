@@ -6,24 +6,24 @@
 /*   By: ldermign <ldermign@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 15:20:17 by ldermign          #+#    #+#             */
-/*   Updated: 2021/08/18 15:21:04 by ldermign         ###   ########.fr       */
+/*   Updated: 2021/12/14 13:20:13 by ldermign         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_free_tab(char **tab)
+void	ft_free_tab(char **str_tab)
 {
 	int	i;
 
 	i = 0;
-	if (tab != NULL)
+	if (str_tab != NULL)
 	{
-		while (tab[i] != NULL)
+		while (str_tab[i] != NULL)
 		{
-			free(tab[i]);
+			free(str_tab[i]);
 			i++;
 		}
 	}
-	free(tab);
+	free(str_tab);
 }
